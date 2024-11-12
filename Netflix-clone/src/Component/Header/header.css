@@ -1,0 +1,48 @@
+.header_outer_container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    /* background-color: transparent; */
+    height:10vh;
+    color: white;
+    transition: all 0.5s;
+    transition-timing-function: ease-in;
+    z-index: 1;
+
+}
+.nav_black{
+ background-color: rgb(20, 20, 20)
+}
+.header_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.header_left ul{
+    width: 140%;
+    display: flex;
+    
+}
+
+
+.header_container ul {
+  display: flex; /* Makes the list items display in a row */
+  list-style: none; /* Removes the default bullet points */
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  gap: 30px;
+  
+}
+.header_container li {
+  color: white; /* Example text color */
+  cursor: pointer;
+}
+.header_container .header_right ul {
+  gap: 10px; /* Adds smaller space between right items */
+}
