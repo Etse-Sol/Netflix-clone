@@ -38,15 +38,7 @@ const SingleRow = ({ title, fetchUrl, isLargeRow }) => {
            setTrailerUrl(urlParams.get("v"));
          })
          .catch((error) => console.log(error));
-        // movieTrailer(null ,{ tmdbId: movie.id })
-        //            .then((url)=>{
-        //              console.log("url is "+url);
-        //              const urlParams=new URLSearchParams(new URL(url).search);
-        //              console.log("urlParamsn"+urlParams);
-        //              setTrailerUrl(urlParams.get("v"));
-        //            })
-        //            .catch((error)=> console.log(error));
-    
+             
  
      }
     
@@ -82,7 +74,7 @@ const SingleRow = ({ title, fetchUrl, isLargeRow }) => {
           ))}
         </div>
         <div style={{ padding: "40px" }}>
-        //   {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+           {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
         </div>
       </div>
       
